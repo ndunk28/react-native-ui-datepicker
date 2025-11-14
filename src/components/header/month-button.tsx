@@ -17,7 +17,13 @@ const MonthButton = () => {
 
   const currentMonthText = dayjs(currentDate)
     .locale(locale)
-    .format(monthCaptionFormat === 'full' ? 'MMMM' : 'MMM');
+    .format(
+      monthCaptionFormat === 'full'
+        ? 'MMMM'
+        : monthCaptionFormat === 'number'
+          ? 'MM'
+          : 'MMM'
+    );
 
   return (
     <Pressable

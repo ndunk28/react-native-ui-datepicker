@@ -28,12 +28,16 @@ export const getMonthName = (month: number) => dayjs.months()[month];
 export const getMonthsArray = (): CalendarMonth[] => {
   const monthNames = dayjs.months();
   const monthShortNames = dayjs.monthsShort();
+  const monthNumberNames = monthNames.map((_, index) =>
+    `${index + 1}`.padStart(2, '0')
+  );
 
   return monthNames.map((name, index) => ({
     index,
     name: {
       full: name,
       short: monthShortNames[index] || '',
+      number: monthNumberNames[index] || '',
     },
     isSelected: false,
   }));

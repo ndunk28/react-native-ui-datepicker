@@ -18,7 +18,7 @@ export type NavigationPosition = 'around' | 'right' | 'left';
 
 export type WeekdayFormat = 'min' | 'short' | 'full';
 
-export type MonthFormat = 'short' | 'full';
+export type MonthFormat = 'short' | 'full' | 'number';
 
 export type LocalState = {
   date: DateType;
@@ -69,6 +69,7 @@ export type CalendarMonth = {
   name: {
     full: string;
     short: string;
+    number: string;
   };
   isSelected: boolean;
 };
