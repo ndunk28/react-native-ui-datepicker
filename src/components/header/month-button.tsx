@@ -43,6 +43,7 @@ const MonthButton = () => {
           style={styles?.month_selector_label}
           className={classNames?.month_selector_label}
         >
+          {monthCaptionFormat === 'number' ? '/ ' : ''}
           {currentMonthText}
         </Text>
       </View>

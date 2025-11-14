@@ -33,9 +33,7 @@ const Selectors = ({ position }: Props) => {
         ) : null}
         <YearButton />
         {calendarView !== 'year' && monthCaptionFormat === 'number' ? (
-          <>
-            {'/'} <MonthButton />
-          </>
+          <MonthButton />
         ) : null}
       </View>
       {timePicker && mode === 'single' && calendarView !== 'year' ? (
