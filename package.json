@@ -1,6 +1,6 @@
 {
   "name": "@inter-digital/react-native-ui-datepicker",
-  "version": "3.0.7",
+  "version": "3.0.7-patch-1",
   "description": "Customizable date picker for React Native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
