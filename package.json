@@ -9,7 +9,8 @@
   "source": "src/index",
   "exports": {
     "import": "./lib/module/index.js",
-    "require": "./lib/commonjs/index.js"
+    "require": "./lib/commonjs/index.js",
+    "types": "./lib/typescript/index.d.ts"
   },
   "files": [
     "src",
